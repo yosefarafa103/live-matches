@@ -8,7 +8,7 @@ export interface Match {
     leagueName: string;
     teamsImages: string[]
 }
-export async function GET(req: Request, res: Response) {
+export async function GET(req: Request, ) {
     try {
         const url = `https://www.yallakora.com/match-center`;
         const { data } = await axios.get(url);
