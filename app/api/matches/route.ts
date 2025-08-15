@@ -16,7 +16,6 @@ export async function GET(req: Request, ) {
         const matchesList = htmlContent.querySelectorAll(
             ".mtchCntrContainer .matchesList"
         );
-
         let results;
         const matches = Array.from(matchesList).map((match) => {
             let leagueMatches: [] = [];
