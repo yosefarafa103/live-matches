@@ -22,7 +22,7 @@ export default function Home() {
   }
   const getData = async () => {
     try {
-      const result = await axios.get("http://localhost:3000/api/matches");
+      const result = await axios.get("https://live-matches-lake.vercel.app/api/matches");
       return result.data
     } catch (err) {
       console.log(err);
